@@ -6,7 +6,7 @@ import Footer from "./Components/Footer";
 
 export default function Home() {
   return (
-    <div className="bg-gris">
+    <div className ="bg-gray-900">
       <div>
         <div>
           <Navbar />
@@ -17,7 +17,7 @@ export default function Home() {
             <Information />
           </div>
           <div className="relative w-1/2 h-full">
-            <div className="w-1/3 h-20 absolute top-0 -translate-y-[70%] rounded-t-2xl bg-blue-light"></div>
+            <div className="w-1/3 h-20 absolute top-0 -translate-y-[70%] rounded-t-2xl bg-gray-600"></div>
             <Cart />
           </div>
         </main>

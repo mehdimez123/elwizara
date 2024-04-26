@@ -2,8 +2,8 @@ import React from "react";
 
 function Navbar() {
   return (
-    <nav className="mt-8">
-      <div className="font-poppins text-bleu-foncé text-2xl font-bold cursor-pointer inline-flex gap-8">
+    <nav>
+      <div className="font-poppins-light text-blue-dark text-2xl  cursor-pointer text-2xl gap-8 p-6 pl-12 flex justify-center items-center">
         <p>Home</p>
         <p>FAQ</p>
         <p>Api</p>

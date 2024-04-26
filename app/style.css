@@ -1,0 +1,82 @@
+.navbar
+{
+    display: flex;
+    flex-direction: row;
+    gap : 20px;
+    font-size: 30px;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('../Poppins-Thin.ttf') format('woff2'), /* Format Web Open Font Format 2 */
+    /* Ajoutez d'autres formats si nécessaire */
+  }
+@font-face {
+    font-family: 'Poppins-ExtraBold';
+    src: url(../Poppins-ExtraBold.ttf);
+}
+.title
+{
+   font-family: "Poppins-ExtraBold";
+   font-weight: bold;
+    font-size: 50px;
+}
+.button_start
+{
+   color: white; 
+    background-color: #F67927;
+    font-family: "Poppins-ExtraBold";
+    width: 300px;
+    height:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 10px;
+    font-weight: 1000;
+    
+}
+.texte1
+{
+   width : 60%;
+   color: white;
+   margin-top: 50px;
+   margin-left: 50px;
+}
+.texts 
+{
+    margin-left: 40px;
+ margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  gap : 20px;
+  color : white;
+}
+.white_part
+{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 70px;
+}
+.blue_part
+{
+    
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    gap : 80px;
+    background-color: #4482A7;
+
+}
+
+.white_nav 
+{
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#D9D9D9;
+    gap : 45px;
+}

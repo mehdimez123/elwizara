@@ -12,9 +12,6 @@ function Information() {
           </p>
         </div>
         <div className="flex justify-center items-center font-poppins text-2xl p-4 mt-2 mb-10">
-          <button className="bg-blue-foncé  rounded  text-2xl w-[100px] h-[80px]">
-            Start
-          </button>
         </div>
       </div>
     </div>

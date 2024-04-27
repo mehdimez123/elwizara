@@ -5,15 +5,14 @@ import Champs from "../Components/Champs";
 function Form() {
   const [serviceCount, setServiceCount] = useState(0);
   const [services, setServices] = useState([]);
-  const [isSaved, setIsSaved] = useState(false);
-  const [isFormValid, setIsFormValid] = useState(false); // State pour indiquer si le formulaire est valide
+  const [isSaved, setIsSaved] = useState(false); // State pour indiquer si les informations ont été enregistrées
 
   const handleServiceCount = (e) => {
     const count = parseInt(e.target.value);
     if (count >= 0) {
       setServiceCount(count);
       setServices(Array.from({ length: count }, () => ({ nom: "", info: "" })));
-      setIsSaved(false);
+      setIsSaved(false); // Réinitialiser l'état lorsque le nombre de services change
     }
   };
 
@@ -23,7 +22,6 @@ function Form() {
         i === index ? { ...service, nom: value } : service
       )
     );
-    checkFormValidity(); // Vérifier la validité du formulaire après chaque modification
   };
 
   const handleInfoChange = (index, value) => {
@@ -32,21 +30,12 @@ function Form() {
         i === index ? { ...service, info: value } : service
       )
     );
-    checkFormValidity(); // Vérifier la validité du formulaire après chaque modification
-  };
-
-  const checkFormValidity = () => {
-    // Vérifier si tous les champs sont remplis
-    const isValid = services.every((service) => service.nom && service.info);
-    setIsFormValid(isValid);
   };
 
   const handleSave = () => {
-    // Enregistrer les informations uniquement si le formulaire est valide
-    if (isFormValid) {
-      console.log("Informations enregistrées :", services);
-      setIsSaved(true);
-    }
+    // Logique pour enregistrer les informations
+    console.log("Informations enregistrées :", services);
+    setIsSaved(true); // Mettre à jour l'état pour indiquer que les informations ont été enregistrées
   };
 
   return (
@@ -62,7 +51,7 @@ function Form() {
         value={serviceCount}
         onChange={handleServiceCount}
         className="border border-gray-300 p-2 rounded bg-blue-light text-black mb-4"
-        min="0"
+        min="0" // Ajout de la valeur minimale
       />
       <p className="text-center text-2xl font-semibold font-poppins mb-4">
         Veuillez mentionner pour chaque service le nom et le type de document :
@@ -79,11 +68,8 @@ function Form() {
       ))}
       {!isSaved && (
         <button
-          className={`bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ${
-            isFormValid ? "" : "opacity-50 cursor-not-allowed"
-          }`} // Désactiver le bouton si le formulaire n'est pas valide
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
           onClick={handleSave}
-          disabled={!isFormValid} // Désactiver le bouton si le formulaire n'est pas valide
         >
           Enregistrer
         </button>

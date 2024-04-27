@@ -8,9 +8,16 @@ import Text_page1 from "../Components/Texte_page1"
 export default function Home() {
   return (
     <>
-      <div>
+      <div class="whole_page">
         <div className="white_nav">
-        <Navbar/>
+        <nav>
+      <div className="font-poppins-light text-black text-2xl  cursor-pointer text-2xl gap-8 p-6 pl-12 flex justify-center items-center">
+        <p>Home</p>
+        <p>Formulaire</p>
+        <p>Contact us</p>
+        <p></p>
+      </div>
+    </nav>
         <div className="white_part">
         <Titre/>
         <Start/>
@@ -18,8 +25,11 @@ export default function Home() {
         </div>
         <div className="blue_part">
             <Text_page1/>
-            <Image src="/images/image.png" alt="photo" width={300} height={300}/>
+            <div className="photo">
+        <Image  src="/images/image.png" alt="photo" width={500} height={500}/>
         </div>
+        </div>
+        
       </div>
     </>
    

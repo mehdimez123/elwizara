@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import Champs from "../Components/Champs";
+import Champs from "../Components/champs";
 
 function Form() {
   const [serviceCount, setServiceCount] = useState(0);
@@ -50,7 +50,8 @@ function Form() {
   };
 
   return (
-    <div className="p-4 flex flex-col justify-center items-center">
+    <div>
+  <div className="p-4 flex flex-col justify-center items-center">
       <p className="text-center text-4xl font-bold font-poppins mb-4">
         Veuillez Remplir votre hérarchie d'entreprise
       </p>
@@ -89,6 +90,7 @@ function Form() {
         </button>
       )}
       {isSaved && <p>Informations enregistrées!</p>}
+    </div>
     </div>
   );
 }

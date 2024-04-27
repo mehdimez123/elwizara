@@ -40,14 +40,14 @@
     margin-top:10px ;
    width : 50%;
    color: white;
-   
+   text-align: justify;
    margin-left: 50px;
   
 }
 .texts 
 {
     margin-left: 40px;
- margin-top: 20px;
+ margin-top: 150px;
   display: flex;
   flex-direction: row;
   gap : 20px;

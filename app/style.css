@@ -26,18 +26,19 @@
     background-color:#4ECDC4;
     font-family: "Poppins-ExtraBold";
     width: 400px;
-    height:40px;
+    height:60px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 20px;
     border-radius: 10px;
     font-weight: 1000;
+    margin-bottom: 20px;
     
 }
 .texte1
 {
-    margin-top:10px ;
+    margin-top:25px ;
    width : 50%;
    color: white;
    text-align: justify;
@@ -78,6 +79,7 @@
     height: 20vh;
     display: flex;
     flex-direction: row;
+    align-items: center;
     width :80%;
     gap : 80px;
     background-color: #292F36;
@@ -114,5 +116,42 @@
 {
     position: absolute;
     bottom: 0px;
-    right: 0px;
+    right: -50px;
+}
+
+.background
+{
+    background-color: #292F36;
+    height: 100vh;
+    
+}
+
+.background p
+{
+    color : white
+}
+
+.input-field {
+    background-color: #292f36; /* Fond du champ */
+    border: 1px solid white; /* Bordure blanche */
+    color: rgba(255, 255, 255, 0.7); /* Texte blanc avec opacité faible */
+    padding: 8px; /* Espacement intérieur */
+    border-radius: 4px; /* Arrondi des coins */
+  }
+.inputs
+{
+    display: flex;
+    margin-bottom: 0.5rem;
+    background-color: #292F36;
+    stroke: white solid;
+}
+.inputs1
+{
+text-align: center;
+font-size: 1.5rem; /* ou 24px */
+font-weight: 600;
+font-family: 'Poppins', sans-serif;
+margin-bottom: 1rem; /* ou 16px */
+ background-color: #292F36;
+ stroke : white solid;
 }

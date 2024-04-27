@@ -1,8 +1,8 @@
 import React from "react";
-import horloge from "../image/horloge.png";
+import easy from "../image/Web Accessibility.png";
 import Image from "next/image";
-import herarchie from "../image/herarchie.png";
-import easy from "../image/easy.png";
+import horloge from "../image/Exercise.png";
+import herarchie from "../image/maki_rocket.png";
 function Information() {
   return (
     <div className="flex flex-col">

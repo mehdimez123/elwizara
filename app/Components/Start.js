@@ -1,9 +1,11 @@
-import React from 'react'
+import Link from 'next/link';
 
 function Start() {
   return (
-    <button className=' button_start'>Start</button>
+    <Link href="../Pronostic" className='button_start'>
+       Start
+    </Link>
   )
 }
 
-export default Start
+export default Start;

@@ -7,7 +7,7 @@ import Footer from "../Components/Footer";
 
 function Resultat() {
   return (
-    <div className="bg-gris h-screen">
+    <div className="bg-[#292F36] h-screen">
       <Navbar />
       <div className="flex flex-col">
         <Informationresultat />

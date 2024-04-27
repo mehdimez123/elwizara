@@ -1,7 +1,7 @@
 "use client";
 
 import { React, useState } from "react";
-import Champs from "../Components/Champs";
+import Champs from "../Components/champs";
 function Form() {
   const [entreprise, setEntreprise] = useState("");
   const [serviceCount, setServiceCount] = useState(0);
@@ -77,6 +77,9 @@ function Form() {
           console.log("Requête POST réussie !");
           console.log(form);
           setIsSaved(true);
+          setTimeout(() => {
+            window.location.href = 'http://localhost:3000';
+          }, 1000);
         } else {
           console.error(
             "Erreur lors de la requête POST :",
